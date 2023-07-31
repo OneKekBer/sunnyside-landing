@@ -1,0 +1,30 @@
+@mixin button ($color) {
+    border-bottom: 2px solid $color;
+}
+
+
+//meadia
+
+@mixin desktop() {
+    @media (max-width:$xl) {
+        @content
+    }
+}
+
+@mixin laptop() {
+    @media (max-width:$lg) {
+        @content
+    }
+}
+
+@mixin tablet() {
+    @media (max-width:$md) {
+        @content
+    }
+}
+
+@mixin mobile() {
+    @media (max-width:$sm) {
+        @content
+    }
+}

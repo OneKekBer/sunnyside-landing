@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Barlow:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Fraunces:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+// colors
+$blue:#3dbfff;
+$softred: hsl(7, 99%, 70%);
+$yellow:hsl(51, 100%, 49%);
+$darkcyan:hsl(167, 40%, 24%);
+$darkblue:hsl(198, 62%, 26%);
+
+
+$vdarkblue:hsl(212, 27%, 19%);
+$vdarkgrayblue:hsl(213, 9%, 39%);
+$darkgrayblue:hsl(232, 10%, 55%);
+$grayblue:hsl(210, 4%, 67%);
+
+
+//fonts
+
+
+$barlow: 'Barlow',
+sans-serif;
+$francues:'Fraunces',
+serif;
+
+//fonts weight
+
+$fsboldest:900;
+$fsbold:700;
+$fssemibold:600;
+
+
+//font sie
+
+$h1:50px;
+
+
+//breakpoints
+
+
+$xl:1200px;
+$lg:767px;
+$md:567px;
+$sm:360px;
+
+
+//hz
