@@ -18,7 +18,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 function App() {
     const isNonMobileScreen576 = useMediaQuery("(min-width:576px)");
-
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
     const open = Boolean(anchorEl);
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -27,8 +26,6 @@ function App() {
     const handleClose = () => {
         setAnchorEl(null);
     };
-
-    console.log(window.innerWidth);
 
     return (
         <div className="wrapper">
