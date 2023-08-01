@@ -26,11 +26,13 @@ body {
     }
 
     &__buttons {
-        gap: 20px;
+        gap: 30px;
 
 
         .header__text {
+            cursor: pointer;
             font-size: $barlow;
+            font-weight: $fssemibold;
         }
 
         .header__button {
@@ -39,6 +41,11 @@ body {
             color: black;
             border-radius: 16px;
             cursor: pointer;
+            transition: all 0.4s ease;
+
+            &:hover {
+                background: rgba(225, 225, 225, 0.4);
+            }
         }
     }
 }
@@ -63,7 +70,7 @@ body {
     }
 
     &__text {
-        font-size: 50px;
+        font-size: $h1;
         font-weight: $fsboldest;
         font-family: $francues;
     }
@@ -100,6 +107,10 @@ body {
 
         text-align: center;
         justify-content: end !important;
+
+        h1 {
+            color: $vdarkgrayblue
+        }
     }
 
     &__box {
@@ -119,7 +130,7 @@ body {
 
 
             h1 {
-                font-size: 40px;
+                font-size: $h2;
                 font-weight: $fsboldest;
                 font-family: $francues;
             }
@@ -197,4 +208,134 @@ body {
             text-align: center;
         }
     }
+}
+
+.rev {
+    margin: 100px 0;
+
+    h2 {
+        color: $darkgrayblue;
+        letter-spacing: 5px;
+        font-size: $h4;
+        margin: 40px 0;
+        font-weight: $fsboldest;
+    }
+
+    .container {
+        padding: 0 10%;
+    }
+
+    &__revs {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__box {
+        padding: 20px;
+
+        &-ava {
+            border-radius: 100%;
+            width: 50px;
+        }
+
+        &-title {
+            font-family: $barlow;
+            font-weight: $fssemibold;
+            color: $darkgrayblue;
+            margin: 50px 0;
+        }
+
+        &-name {
+            font-weight: $fsboldest;
+
+        }
+
+        &-occ {
+            color: $grayblue;
+
+        }
+    }
+
+    @include laptop {
+        &__revs {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}
+
+.catalog {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0;
+        grid-auto-rows: 30vw;
+    }
+
+    &__box {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &:nth-of-type(1) {
+            background-image: url('../assets/image-gallery-milkbottles.jpg');
+        }
+
+        &:nth-of-type(2) {
+            background-image: url('../assets/image-gallery-orange.jpg');
+        }
+
+        &:nth-of-type(3) {
+            background-image: url('../assets/image-gallery-cone.jpg');
+        }
+
+        &:nth-of-type(4) {
+            background-image: url('../assets/image-gallery-sugarcubes.jpg');
+        }
+    }
+
+
+    @include laptop {
+        .container {
+            grid-auto-rows: 50vw;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+
+.footer {
+    background-color: $cyan;
+    font-family: $barlow;
+    color: $darkcyan;
+
+    .container {
+        padding: 50px 0;
+    }
+
+
+
+    h1 {
+        font-weight: $fsboldest;
+        font-size: $h3;
+    }
+
+    &__titles {
+        gap: 20px;
+        margin-bottom: 60px;
+    }
+
+    &__title {
+
+        font-weight: $fssemibold;
+    }
+
+    &__socs {
+        gap: 20px
+    }
+
+    &__soc {}
 }
